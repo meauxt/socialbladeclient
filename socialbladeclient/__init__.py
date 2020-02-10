@@ -11,8 +11,8 @@ VIDEOS_VEIWS_PATH = '//*[@id="YouTubeUserTopInfoBlock"]/div[4]/span[2]/text()'
 
 def get_data(channel_id):
 
-
-    r = requests.post(URL+channel_id)
+    headers = {'user-agent': 'socialbladeclient'}
+    r = requests.post(URL+channel_id, headers = headers)
 
     content = html.fromstring(r.content)
     text = str(content.xpath(SUBSCRIBERS_PATH))
