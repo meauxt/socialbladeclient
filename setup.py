@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(name='socialbladeclient',
       version='0.1',
-      description='USCIS Status Checker',
+      description='Social Blade Client',
       url='http://github.com/meauxt/socialbladeclient',
       author='Mohamad Tarbin',
       author_email='mhed.t91@gmail.com',
