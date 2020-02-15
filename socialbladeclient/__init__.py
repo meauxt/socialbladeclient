@@ -23,4 +23,16 @@ def get_data(channel_id, timeout = 5):
 
     
 
-    return {'subscribers': subscribers, 'total_views': videos_views, 'last_updated':datetime.now()}
+    return {'subscribers': subscribers, 'subscribers_number': subscribers_to_number(subscribers),'total_views': videos_views, 'last_updated':datetime.now()}
+
+def subscribers_to_number(subscribers):
+    number = 1
+    x=subscribers[-1]
+    if x.isalpha():
+        if x == "K":
+            number = 1000
+        elif x == "M":
+            number = 1000000
+    return int(number * float(subscribers[0:-1]))
+
+ 
