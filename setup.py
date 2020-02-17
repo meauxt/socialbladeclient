@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='socialbladeclient',
-      version='0.3',
+      version='0.5',
       description='Social Blade Client',
       url='http://github.com/meauxt/socialbladeclient',
       author='Mohamad Tarbin',
