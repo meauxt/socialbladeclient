@@ -33,6 +33,7 @@ def subscribers_to_number(subscribers):
             number = 1000
         elif x == "M":
             number = 1000000
-    return int(number * float(subscribers[0:-1]))
+        return int(number * float(subscribers[0:-1]))
+    return int(subscribers)
 
  
